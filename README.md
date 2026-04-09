@@ -5,7 +5,7 @@ Self-hosted identity provider setup for `auth.satsaa.dev` and a small TypeScript
 ## Structure
 
 - `infra/zitadel`: bootstrap scripts and env template for a Linux-friendly ZITADEL deployment
-- `packages/auth-core`: app-side OIDC discovery, JWKS verification, and local account enforcement helpers
+- sibling `auth-core` repo: app-side OIDC discovery, JWKS verification, and local account enforcement helpers
 
 ## Why this layout
 
@@ -19,7 +19,7 @@ Self-hosted identity provider setup for `auth.satsaa.dev` and a small TypeScript
 2. Set your real domain, passwords, and master key.
 3. Run `./infra/zitadel/bootstrap.sh` on Linux to fetch the current official compose files.
 4. Start the provider from `infra/zitadel/stack`.
-5. Use `packages/auth-core` in your apps to verify tokens from `auth.satsaa.dev`.
+5. Use the sibling `auth-core` package in your apps to verify tokens from `auth.satsaa.dev`.
 
 ## Auth model
 
