@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "name": "SatsAuth",
+      "path": ".."
+    },
+    {
+      "name": "auth-core",
+      "path": "../../auth-core"
+    }
+  ],
+  "settings": {}
+}
