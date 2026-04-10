@@ -1,0 +1,25 @@
+[Unit]
+Description=ZITADEL identity provider
+Documentation=https://zitadel.com/docs
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+Type=simple
+User=zitadel
+Group=zitadel
+WorkingDirectory=/opt/zitadel
+EnvironmentFile=/etc/zitadel/env
+ExecStart=/usr/local/bin/zitadel start-from-init --masterkeyFromEnv
+Restart=on-failure
+RestartSec=5s
+
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/zitadel
+
+[Install]
+WantedBy=multi-user.target

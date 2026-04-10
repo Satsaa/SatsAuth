@@ -5,5 +5,8 @@
   "packageManager": "pnpm@10",
   "scripts": {
     "typecheck": "echo SatsAuth has no local TypeScript packages yet"
+  },
+  "dependencies": {
+    "log-core": "github:Satsaa/log-core"
   }
 }

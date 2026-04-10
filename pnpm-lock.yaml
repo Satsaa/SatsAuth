@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      log-core:
+        specifier: github:Satsaa/log-core
+        version: https://codeload.github.com/Satsaa/log-core/tar.gz/1e6757d92f17b20c10e41daed414632f30819ebe
+
+packages:
+
+  log-core@https://codeload.github.com/Satsaa/log-core/tar.gz/1e6757d92f17b20c10e41daed414632f30819ebe:
+    resolution: {tarball: https://codeload.github.com/Satsaa/log-core/tar.gz/1e6757d92f17b20c10e41daed414632f30819ebe}
+    version: 0.0.1
+
+snapshots:
+
+  log-core@https://codeload.github.com/Satsaa/log-core/tar.gz/1e6757d92f17b20c10e41daed414632f30819ebe: {}

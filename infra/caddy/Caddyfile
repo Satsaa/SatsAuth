@@ -1,0 +1,8 @@
+auth.satsaa.dev {
+    reverse_proxy localhost:8080
+
+    tls {
+        # Caddy handles Let's Encrypt automatically.
+        # Make sure port 80 and 443 are open and the domain points to this Pi.
+    }
+}
